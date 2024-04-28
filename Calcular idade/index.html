@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <style>
+        header{
+            text-align: center;
+        }
+
+        section{
+            margin: auto;
+            padding: 10px;
+            border: solid 1px rgba(202, 129, 202, 0.774);
+            background-color: rgba(189, 180, 230, 0.596);
+            width: 30%;
+        }
+
+        #gerar{
+            padding: 10px;
+            background-color: rgba(66, 0, 128, 0.5);
+            font-size: medium;
+            border: none;
+            color: white;
+            margin: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>Calculadora de Idade</h1> 
+            <!--Uma função que aceite o ano de nascimento de uma pessoa e retorne sua idade.-->
+        </header>
+
+        <section>
+        Ano de nascimento: <input type="number" id="ano"> 
+        <div>
+            <input type="button" id="gerar" value="Gerar idade">
+        </div>
+
+        <div id="res">
+            
+        </div>
+
+        <script>
+            let anoAtual = new Date().getFullYear()
+                let anoUser = document.getElementById('ano')
+                let gerarAge = document.getElementById('gerar')
+                let res = document.getElementById('res')
+                gerarAge.addEventListener('click', idade)
+
+                function idade(){
+                    let anoNascimento = parseInt(anoUser.value);
+                    if (isNaN(anoNascimento) || anoNascimento <= 0 || anoNascimento > anoAtual) {
+                        res.innerHTML = "Ano inválido!"
+                    } else {
+                        let calcIdade = anoAtual - anoNascimento
+                        res.innerHTML = `Sua idade é ${calcIdade}`
+                    }
+                }
+        </script>
+    </section>
+</body>
+</html>

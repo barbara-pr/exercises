@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revertendo uma string</title>
+    <style>
+        header{
+            text-align: center;
+        }
+
+        section{
+            margin: auto;
+            padding: 10px;
+            border: solid 1px rgba(202, 129, 202, 0.774);
+            background-color: rgba(189, 180, 230, 0.596);
+            width: 30%;
+        }
+
+        #reverte{
+            padding: 10px;
+            background-color: rgba(66, 0, 128, 0.5);
+            font-size: medium;
+            border: none;
+            color: white;
+            margin: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Reversão de String</h3>
+    </header>
+
+    <section>
+        Insira um palavra: <input type="text" id="palavra">
+        <div>
+            <input type="button" id="reverte" value="Reverter">
+        </div>
+
+        <div id="res">
+
+        </div>
+
+        <script>
+            let palavraUser = document.getElementById('palavra')
+            let rev = document.getElementById('reverte')
+            let res = document.getElementById('res')
+            rev.addEventListener('click', reverter)
+
+            function reverter() {
+                let palavra = palavraUser.value;
+                if (palavra.length === 0) {
+                    res.innerHTML = "Digite algo."
+
+                } else {
+                    let palavraRevertida = ""
+                    for (let i = palavra.length - 1; i >= 0; i--) {
+                        palavraRevertida += palavra[i]
+                    }
+                    res.innerHTML = "String revertida: " + palavraRevertida
+                }
+            }
+        </script>
+    </section>
+</body>
+</html>
