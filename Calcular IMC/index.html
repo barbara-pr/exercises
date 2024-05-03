@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        main{
+            background-color: rgba(151, 87, 8, 0.411);
+            width: 400px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            font-size: large;
+            background-color: rgb(90, 61, 6);
+            color: white;
+            cursor: pointer;
+        }
+
+        input{
+            padding: 6px;
+            margin-top: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+
+    <main>
+        Qual seu peso? (kg) <input type="number" id="peso">
+        <br>
+        Qual sua altura? (m) <input type="number" id="altura">
+
+        <p><button type="button" onclick="medir()">Calcular IMC</button></p>
+        <div id="res"></div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
