@@ -1,6 +1,15 @@
+// uma condição para a altura ser formatada automaticamente
+document.getElementById('altura').addEventListener('input', function() {
+    let altura = this.value.replace(/[^\d]/g, '')
+    if (altura.length >= 3) {
+        altura = altura.slice(0, -2) + '.' + altura.slice(-2)
+    }
+    this.value = altura 
+})
+
 function medir(){
     let peso = parseFloat(document.getElementById('peso').value)
-    let altura = parseFloat(document.getElementById('altura').value)
+    let altura = parseFloat(document.getElementById('altura').value.replace(',', '.'))
     let res = document.getElementById('res')
 
     let calc = peso / (altura * altura)
