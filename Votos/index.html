@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+</head>
+<body>
+    <div>
+        <label for="eleitor">Total de eleitores:</label>
+        <input type="number" id="eleitor" placeholder="Total de eleitores">
+    </div>
+    <div>
+        <label for="branco">Votos brancos:</label>
+        <input type="number" id="branco" placeholder="Votos brancos">
+    </div>
+    <div>
+        <label for="nulo">Votos nulos:</label>
+        <input type="number" id="nulo" placeholder="Votos nulos">
+    </div>
+    <div>
+        <label for="valido">Votos válidos:</label>
+        <input type="number" id="valido" placeholder="Votos válidos">
+    </div>
+    <button onclick="calcularPercentuais()">Percentuais</button>
+    <div id="res"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

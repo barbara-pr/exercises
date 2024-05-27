@@ -20,7 +20,7 @@ const criarDiv = (texto) => { //uma função é definida e atribuída à const c
     document.getElementById('container').appendChild(div); //adiciona a div criada e configurada ao elemento com o ID container presente no documento HTML.
 }
 
-const exibir = (sons) => Object.keys(sons).forEach(criarDiv);
+const exibir = (sons) => Object.keys(sons).forEach(criarDiv); //vai varrer todos os elementos do array, cada elemento que o forEach pegar vai para a função criarDiv
 
 const tocarSom = (letra) => {
     const audio = new Audio(`./sounds/${sons[letra]}`);
@@ -33,8 +33,8 @@ const adicionarEfeito = (letra) => document.getElementById(letra)
 const removerEfeito = (letra) => {
     const div = document.getElementById(letra);
     const removeActive = () => div.classList.remove('active');
-    setTimeout(removeActive,100)
-    /*div.addEventListener('transitionend',removeActive);*/
+    setTimeout(removeActive, 100)
+    /*div.addEventListener('transitionend',removeActive);   se tivesse esse em vez da linha de cima chegaria uma hora em que o efeito ficaria preso*/
 };
 
 const ativarDiv = (evento) => {
