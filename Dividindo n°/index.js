@@ -5,7 +5,7 @@ const dividir = () => {
     let validInput = false // controlar o loop
 
     do {
-        valor2 = parseFloat(document.getElementById('n2').value);
+        valor2 = parseFloat(document.getElementById('n2').value)
         if (isNaN(valor2) || valor2 === 0) {
             resultado.textContent = 'Preencha todos os campos e insira um valor diferente de zero no divisor.'
             return
