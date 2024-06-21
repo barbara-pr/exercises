@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="idades.css">
+    <title>IDADES</title>
+</head>
+<body id="ver">
+    <header>
+        <h1>Verificador de Idades</h1>
+    </header>
+
+    <section>
+        <p>Ano de nascimento: 
+            <input type="number" name="ano" id="ano" placeholder="Apenas 4 dígitos">
+        </p>
+        
+        Sexo: 
+        <input type="radio" name="sexo" id="sexoF"><label for="sexoF">Feminino</label>
+        <input type="radio" name="sexo" id="sexoM"> <label for="sexoM">Masculino</label>
+        <input type="button" value="VERIFICAR" id="botao" onclick="verificar()">
+
+        <div id='res'>
+            Preencha os dados acima!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; @barbara-pr</p>
+    </footer>
+
+    <script src="idades.js"></script>
+</body>
+</html>

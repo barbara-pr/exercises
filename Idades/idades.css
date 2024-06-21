@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30vw;
+    height: 36.5vh;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(37, 37, 37);
+}
+
+input{
+    margin: 5px;
+    padding: 5px;
+}
+
+#botao{
+    border: 1px none rgb(208, 222, 228);
+    background-color: rgb(175, 232, 255);
+    border-radius: 5px;
+    padding: 8px 5px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#botao:hover{
+    background-color: rgb(7, 56, 95);
+    color: white;
+    cursor: pointer;
+}
+
+#res{
+    margin-top: 18px;
+}
+
+footer > p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(51, 117, 199), rgb(101, 133, 155));
+    background-attachment: fixed;
+}
