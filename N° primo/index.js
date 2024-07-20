@@ -9,6 +9,7 @@ function primo() {
 
     } else {
         let isPrimo = true
+        // Iterar sobre todos os possíveis divisores existentes de 2 até a raiz quadrada do n° digitado
         for (let i = 2; i <= Math.sqrt(numUserP); i++) {
             if (numUserP % i === 0) {
                 isPrimo = false
