@@ -1,19 +1,19 @@
 {
-  "name": "servidor-com-express",
+  "name": "servidor-com-koa",
   "version": "1.0.0",
-  "description": "Explicação de como criar um servidor com Express",
+  "description": "Explicando como criar um servidor com Koa.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [
-    "express"
+    "koa"
   ],
   "author": "Bárbara",
-  "license": "MPL-2.0",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
-  },
-  "devDependencies": {}
+    "koa": "^2.15.3",
+    "koa-router": "^12.0.1"
+  }
 }

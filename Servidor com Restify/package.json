@@ -1,19 +1,18 @@
 {
-  "name": "servidor-com-express",
+  "name": "servidor-com-restify",
   "version": "1.0.0",
-  "description": "Explicação de como criar um servidor com Express",
+  "description": "Explicando como criar um servidor com Restify.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [
-    "express"
+    "restify"
   ],
   "author": "Bárbara",
-  "license": "MPL-2.0",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
-  },
-  "devDependencies": {}
+    "restify": "^8.6.1"
+  }
 }
