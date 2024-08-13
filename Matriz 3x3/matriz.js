@@ -28,7 +28,7 @@ function criarMatriz(nLinha, nColuna){
     return matriz
 }
 
-function mostrarMatriz(){
+function mostrarMatriz(matriz){
     for(let contador = 0; contador < matriz.length; contador++){
         console.log(matriz[contador])
     }
@@ -44,6 +44,5 @@ matriz3x3 = criarMatriz(NUMERO_DE_LINHAS, NUMERO_DE_COLUNAS)
 
 // Processamento e saída de dados
 console.clear()
-cabecalho()
 mostrarMatriz(matriz3x3)
 rodape()
